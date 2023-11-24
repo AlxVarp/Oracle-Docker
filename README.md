@@ -44,7 +44,12 @@ Pre-requisite:
 
 ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/f0e9b61e-3c89-465a-ad17-95fc43495ba4)
 
-- ORACLE_PWD=Oracle_123 
+
+
+    environment:
+          - ORACLE_SID=ORCLCDB
+          - ORACLE_PDB=ORCLPDB1
+          - ORACLE_PWD=Oracle_123
 ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/d624d1c3-a687-41bd-ae85-b1aa164d9d09)
 
 
@@ -57,3 +62,11 @@ Pre-requisite:
     end;
 ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/e0cbf1f3-9e66-4e97-a7cc-e002c662e103)
 
+
+
+    CREATE TABLESPACE LIBRERIA_NEW DATAFILE '/opt/oracle/oradata/LIBRERIA_NEW' SIZE 100 M AUTOEXTEND ON NEXT 100 M MAXSIZE 1 G;
+    
+    CREATE USER DESARROLLO
+    IDENTIFIED BY DESARROLLO
+    DEFAULT TABLESPACE LIBRERIA_NEW;
+	
