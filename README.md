@@ -29,4 +29,31 @@ Pre-requisite:
 
 ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/2133aa15-b84d-4642-a359-5019b0a7fa79)
 
+![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/c75dcb83-05c7-4df1-aa8d-989413cd5903)
+
+
+
+    docker-compose logs -f
+	
+![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/2ea997b1-195c-4a72-8891-41cded778193)
+
+
+
+    docker-compose  ps
+![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/c00cbfb0-673c-48ce-aab5-f4356d4195de)
+
+![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/f0e9b61e-3c89-465a-ad17-95fc43495ba4)
+
+- ORACLE_PWD=Oracle_123 
+![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/d624d1c3-a687-41bd-ae85-b1aa164d9d09)
+
+
+
+    begin
+        execute immediate 'drop user egibide cascade';
+    exception
+        when others then
+            dbms_output.put_line('El usuario no existe.');
+    end;
+![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/e0cbf1f3-9e66-4e97-a7cc-e002c662e103)
 
