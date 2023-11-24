@@ -20,10 +20,10 @@ Pre-requisite:
 
 5.  en  la  consola  ingresar el comando y loguearse con los datos de la cuenta de Oracle
 
-  	
+
 
     docker login  container-registry.oracle.com
-
+    
 Clonar el Repo
 
 	git clone git@github.com:AlxVarp/Oracle-Docker.git
