@@ -9,32 +9,28 @@ Pre-requisite:
 
 2. Select Enterprise.
 
-![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/8ee5b307-b521-4988-9836-cea8fa46067a)
+ ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/8ee5b307-b521-4988-9836-cea8fa46067a)
 
-3. Click “Sign In”
+3.  Click “Sign In”
 ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/e92278e6-b606-4305-9d3d-f1d3d4fc63b1)
 
 4.  Authenticate by entering your registered email ID and password.
 
   ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/d630e11a-2f3f-4d7d-9720-f29f1b3a2003)
 
-6.  en  la  consola  ingresar el comando docker login  container-registry.oracle.com
+5.  en  la  consola  ingresar el comando y loguearse con los datos de la cuenta de Oracle
 
+  	
 
-![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/55ff5858-c12a-4afa-92c6-ec9b130ae309)
+    docker login  container-registry.oracle.com
 
-7. Git clone  git@github.com:AlxVarp/Oracle-Docker.git
+Clonar el Repo
 
-8. ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/81733d5e-3ba7-4e18-ac17-34568f4c2160)
+	git clone git@github.com:AlxVarp/Oracle-Docker.git
+ 	cd Oracle-Docker/
+	docker-compose up -d
+	docker-compose logs -f
 
-![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/2133aa15-b84d-4642-a359-5019b0a7fa79)
-
-![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/c75dcb83-05c7-4df1-aa8d-989413cd5903)
-
-
-
-    docker-compose logs -f
-	
 ![image](https://github.com/AlxVarp/Oracle-Docker/assets/21965009/2ea997b1-195c-4a72-8891-41cded778193)
 
 
